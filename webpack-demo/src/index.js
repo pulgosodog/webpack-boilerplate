@@ -17,6 +17,15 @@ function component() {
   
     return element;
   }
+
+  function componentCustom(string) {
+    const element = document.createElement('div');
+    element.innerHTML = string;
+    element.classList.add('hello');
   
-  document.body.appendChild(component());
+      return element;
+    }
+    
+    document.body.appendChild(component());
+    document.body.appendChild(componentCustom('Jeje funciona'));
     
